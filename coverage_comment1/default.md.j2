@@ -48,7 +48,7 @@ The branch rate is `{{ (coverage.info.covered_branches / coverage.info.num_branc
 Missing lines: {% for line in diff_file_coverage.violation_lines %}{{ separator() }}`{{ line }}`{% endfor %}
 {%- endblock single_file_missing_lines_wording %}
 {% endif -%}
-{%- endblock coverage_single_file -%}
+{%- endblock coverage_single_file %}
 {%- endfor %}
 </details>
 {%- endif %}
